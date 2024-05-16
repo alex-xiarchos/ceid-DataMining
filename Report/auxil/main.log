@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.5.2)  9 MAY 2024 20:34
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.5.2)  16 MAY 2024 19:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -24,13 +24,25 @@ File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
-) (setup.tex
+)
+(W:\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(W:\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (setup.tex
 (W:\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (W:\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
+\KV@toks@=\toks18
 )
 (W:\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -48,7 +60,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutheight=\dimen146
 \Gm@layouthoffset=\dimen147
 \Gm@layoutvoffset=\dimen148
-\Gm@dimlist=\toks18
+\Gm@dimlist=\toks19
  (W:\MiKTeX\tex/latex/geometry\geometry.cfg))
 (W:\MiKTeX\tex/latex/fontspec\fontspec.sty
 (W:\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
@@ -117,12 +129,12 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen152
 \ar@mcellbox=\box52
 \extrarowheight=\dimen153
-\NC@list=\toks19
+\NC@list=\toks20
 \extratabsurround=\skip50
 \backup@length=\skip51
 \ar@cellbox=\box53
 )
-\everycr=\toks20
+\everycr=\toks21
 \minrowclearance=\skip52
 \rownum=\count277
 ) (W:\MiKTeX\tex/latex/tools\tabularx.sty
@@ -133,7 +145,7 @@ Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 \TX@target=\dimen157
 \TX@delta=\dimen158
 \TX@cols=\count278
-\TX@ftn=\toks21
+\TX@ftn=\toks22
 )
 (W:\MiKTeX\tex/latex/tabularray\tabularray.sty
 Package: tabularray 2024-02-16 v2024A Typeset tabulars and arrays with LaTeX3
@@ -348,7 +360,7 @@ Package: amstext 2021/08/26 v2.01 AMS text
 
 (W:\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks22
+\@emptytoks=\toks23
 \ex@=\dimen279
 ))
 (W:\MiKTeX\tex/latex/amsmath\amsbsy.sty
@@ -388,21 +400,21 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \dotsspace@=\muskip16
 \c@parentequation=\count323
 \dspbrk@lvl=\count324
-\tag@help=\toks23
+\tag@help=\toks24
 \row@=\count325
 \column@=\count326
 \maxfields@=\count327
-\andhelp@=\toks24
+\andhelp@=\toks25
 \eqnshift@=\dimen282
 \alignsep@=\dimen283
 \tagshift@=\dimen284
 \tagwidth@=\dimen285
 \totwidth@=\dimen286
 \lineht@=\dimen287
-\@envbody=\toks25
+\@envbody=\toks26
 \multlinegap=\skip56
 \multlinetaggap=\skip57
-\mathdisplay@stack=\toks26
+\mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 ))
@@ -947,7 +959,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-\tag@help=\toks27
+\tag@help=\toks28
 
 W:\MiKTeX\tex/latex/amsmath\amsmath.sty:1226: LaTeX Error: Command \thetag alre
 ady defined.
@@ -996,7 +1008,7 @@ or  <return>  to continue without it.
 \row@=\count335
 \column@=\count336
 \maxfields@=\count337
-\andhelp@=\toks28
+\andhelp@=\toks29
 \eqnshift@=\dimen289
 \alignsep@=\dimen290
 \tagshift@=\dimen291
@@ -1033,7 +1045,7 @@ or  <return>  to continue without it.
 \tagwidth@=\dimen292
 \totwidth@=\dimen293
 \lineht@=\dimen294
-\@envbody=\toks29
+\@envbody=\toks30
 
 W:\MiKTeX\tex/latex/amsmath\amsmath.sty:1494: LaTeX Error: Command \start@align
 ed already defined.
@@ -1336,7 +1348,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-\mathdisplay@stack=\toks30
+\mathdisplay@stack=\toks31
 
 W:\MiKTeX\tex/latex/amsmath\amsmath.sty:2952: LaTeX Error: Command \equation* a
 lready defined.
@@ -1360,7 +1372,7 @@ Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
 (W:\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
 (W:\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
 (W:\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks31
+\pgfutil@everybye=\toks32
 \pgfutil@tempdima=\dimen295
 \pgfutil@tempdimb=\dimen296
 )
@@ -1396,11 +1408,11 @@ Package graphics Info: Driver file: xetex.def on input line 107.
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
 (W:\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks32
-\pgfkeys@temptoks=\toks33
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
 
 (W:\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks34
+\pgfkeys@tmptoks=\toks35
 ))
 \pgf@x=\dimen299
 \pgf@y=\dimen300
@@ -1418,9 +1430,9 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \c@pgf@countb=\count339
 \c@pgf@countc=\count340
 \c@pgf@countd=\count341
-\t@pgf@toka=\toks35
-\t@pgf@tokb=\toks36
-\t@pgf@tokc=\toks37
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
 \pgf@sys@id@count=\count342
 
 (W:\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
@@ -1456,9 +1468,9 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 \pgfmath@dimen=\dimen309
 \pgfmath@count=\count346
 \pgfmath@box=\box129
-\pgfmath@toks=\toks38
-\pgfmath@stack@operand=\toks39
-\pgfmath@stack@operation=\toks40
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
 )
 (W:\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex)
 (W:\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
@@ -1573,8 +1585,8 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 ))
 (W:\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks41
-\verbatim@line=\toks42
+\every@verbatim=\toks42
+\verbatim@line=\toks43
 \verbatim@in@stream=\read3
 )
 (W:\MiKTeX\tex/latex/environ\environ.sty
@@ -1604,7 +1616,7 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \aftertitleunit=\skip62
 \ttl@plus=\dimen337
 \ttl@minus=\dimen338
-\ttl@toksa=\toks43
+\ttl@toksa=\toks44
 \titlewidth=\dimen339
 \titlewidthlast=\dimen340
 \titlewidthfirst=\dimen341
@@ -1673,8 +1685,8 @@ Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen343
 \pgffor@skip=\dimen344
-\pgffor@stack=\toks44
-\pgffor@toks=\toks45
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
 ))
 (W:\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
@@ -1788,25 +1800,25 @@ File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (W:\MiKTeX\tex/latex/pgfopts\pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks46
-\pgfopts@list@add@b@toks=\toks47
+\pgfopts@list@add@a@toks=\toks47
+\pgfopts@list@add@b@toks=\toks48
 )
 (W:\MiKTeX\tex/latex/elocalloc\elocalloc.sty
 Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
 )
 (W:\MiKTeX\tex/latex/inlinedef\inlinedef.sty
 Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
-\ID@toks=\toks48
+\ID@toks=\toks49
 \ID@count=\count369
 )
-\ID@usercommands=\toks49
+\ID@usercommands=\toks50
 \safeloop@depth=\count370
 \safeRKloop@depth=\count371
 \forest@temp@dimen=\dimen354
 \forest@temp@count=\count372
 \forest@n=\count373
 \forest@temp@global@count=\count374
-\forest@temp@toks=\toks50
+\forest@temp@toks=\toks51
 \forest@temparray@M=\count375
 \forest@temparray@N=\count376
 \forest@global@temparray@M=\count377
@@ -1817,8 +1829,8 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@sort@m=\count381
 \forest@sort@k=\count382
 \forest@sort@p=\count383
-\bracket@content=\toks51
-\bracket@afterthought=\toks52
+\bracket@content=\toks52
+\bracket@afterthought=\toks53
 \forest@node@maxid=\count384
 \forest@process@left@M=\count385
 \forest@process@left@N=\count386
@@ -1829,18 +1841,18 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 \forest@process@result@M=\count391
 \forest@process@result@N=\count392
 \forest@process@n=\count393
-\forest@nodewalk@branch@toks=\toks53
-\forest@nodewalk@shortsteps@resolution=\toks54
-\forest@do@dynamics=\toks55
+\forest@nodewalk@branch@toks=\toks54
+\forest@nodewalk@shortsteps@resolution=\toks55
+\forest@do@dynamics=\toks56
 \forest@box=\box169
 \forest@xg=\dimen356
 \forest@yg=\dimen357
 \forest@xs=\dimen358
 \forest@ys=\dimen359
-\forest@pi@toks=\toks56
-\forest@segment@toks=\toks57
-\forest@PIi@toks=\toks58
-\forest@PIii@toks=\toks59
+\forest@pi@toks=\toks57
+\forest@segment@toks=\toks58
+\forest@PIi@toks=\toks59
+\forest@PIii@toks=\toks60
 \forest@copy@in=\read5
 \forest@copy@out=\write4
 \forest@externalize@max@outer@n=\count394
@@ -1850,7 +1862,7 @@ Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip72
 \enit@outerparindent=\dimen360
-\enit@toks=\toks60
+\enit@toks=\toks61
 \enit@inbox=\box170
 \enit@count@id=\count396
 \enitdp@description=\count397
@@ -1858,7 +1870,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 (W:\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count398
 \lst@gtempboxa=\box171
-\lst@token=\toks61
+\lst@token=\toks62
 \lst@length=\count399
 \lst@currlwidth=\dimen361
 \lst@column=\count400
@@ -1885,7 +1897,7 @@ Package: listings 2024/03/11 1.10a (Carsten Heinz)
 
 (W:\MiKTeX\tex/latex/arabi\arabicore.sty
   Arabi Core switching commands v1.0  2006/01/01   (may still change)  
-\n@everypar=\toks62
+\n@everypar=\toks63
 Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 137 replaced by U+FFFD.
@@ -2504,38 +2516,48 @@ Package fontspec Info:
 (fontspec)             <->"Times New
 (fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;"
 
+
+(W:\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count532
+\float@exts=\toks64
+\float@box=\box174
+\@float@everytoks=\toks65
+\@floatcapt=\box175
+)
+\@float@every@table=\toks66
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count532
-\@quotereset=\count533
+\@quotelevel=\count533
+\@quotereset=\count534
 (W:/PycharmProjects\DataMining\Report\auxil\main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
 .
 
 (W:\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -2576,75 +2598,75 @@ Package fontspec Info:
 (fontspec)             Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
-\symlegacymaths=\mathgroup4
+\symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 4.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 4.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 4.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 4.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 4.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 4.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 4.
-LaTeX Font Info:    Redeclaring math accent \check on input line 4.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 4.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 4.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 4.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 4.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 4.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 5.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 5.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 5.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 5.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 5.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 5.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 5.
+LaTeX Font Info:    Redeclaring math accent \check on input line 5.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 5.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 5.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 5.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 5.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 4.
+(Font)              `operators' in the math version `normal' on input line 5.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/ConduitITCHelLight(0)/m/n on input l
-ine 4.
+ine 5.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 4.
+(Font)              `operators' in the math version `bold' on input line 5.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/ConduitITCHelLight(0)/m/n on input 
-line 4.
+line 5.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/ConduitITCHelLight(0)/m/n --> TU/ConduitITCHelLight(
-0)/m/n on input line 4.
+0)/m/n on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/ConduitITCHelLight(0)/m/it on input
- line 4.
+ line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/ConduitITCHelLight(0)/b/n on input 
-line 4.
+line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 4.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/m/n on input line 4.
+(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/m/n on input line 5.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/ConduitITCHelLight(0)/m/n --> TU/ConduitITCHelLight(
-0)/b/n on input line 4.
+0)/b/n on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/ConduitITCHelLight(0)/b/it on inpu
-t line 4.
+t line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 4.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 5.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/b/n on input line 4.
+(Font)                  OT1/cmtt/m/n --> TU/CourierNew(0)/b/n on input line 5.
 (W:\MiKTeX\tex/latex/ninecolors\ninecolors.sty
 Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
 )
-LaTeX Info: Command `\dddot' is already robust on input line 4.
-LaTeX Info: Command `\ddddot' is already robust on input line 4.
-LaTeX Info: Command `\overleftrightarrow' is already robust on input line 4.
-LaTeX Info: Command `\underrightarrow' is already robust on input line 4.
-LaTeX Info: Command `\underleftarrow' is already robust on input line 4.
-LaTeX Info: Command `\underleftrightarrow' is already robust on input line 4.
-\c@lstlisting=\count534
+LaTeX Info: Command `\dddot' is already robust on input line 5.
+LaTeX Info: Command `\ddddot' is already robust on input line 5.
+LaTeX Info: Command `\overleftrightarrow' is already robust on input line 5.
+LaTeX Info: Command `\underrightarrow' is already robust on input line 5.
+LaTeX Info: Command `\underleftarrow' is already robust on input line 5.
+LaTeX Info: Command `\underleftrightarrow' is already robust on input line 5.
+\c@lstlisting=\count535
 Package biblatex Info: Trying to load language 'greek'...
 Package biblatex Info: ... file 'greek.lbx' found.
 
@@ -2661,44 +2683,45 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' not found.
 
 No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 4.
-Package biblatex Info: Reference segment=0 on input line 4.
-main.tex:12: LaTeX Error: Something's wrong--perhaps a missing \item.
+Package biblatex Info: Reference section=0 on input line 5.
+Package biblatex Info: Reference segment=0 on input line 5.
+(W:\MiKTeX\tex/latex/amsfonts\umsa.fd) (W:\MiKTeX\tex/latex/amsfonts\umsb.fd)
+main.tex:13: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12         \end{tabularx}
+l.13         \end{tabularx}
                            
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-main.tex:12: LaTeX Error: Something's wrong--perhaps a missing \item.
+main.tex:13: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12         \end{tabularx}
+l.13         \end{tabularx}
                            
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-main.tex:12: LaTeX Error: Something's wrong--perhaps a missing \item.
+main.tex:13: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12         \end{tabularx}
+l.13         \end{tabularx}
                            
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 32.
+LaTeX Warning: Command \textendash invalid in math mode on input line 33.
 
 [1
 
@@ -2715,10 +2738,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
 
-[1] (question1.tex
+[1] (q1.tex
 \textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
 extiota \textomicron  1.
-question1.tex:1: Missing number, treated as zero.
+q1.tex:1: Missing number, treated as zero.
 <to be read again> 
                    \relax 
 l.1 \chapter{ΕΡΩΤΗΜΑ 1}
@@ -2727,7 +2750,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-question1.tex:1: Illegal unit of measure (pt inserted).
+q1.tex:1: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
 l.1 \chapter{ΕΡΩΤΗΜΑ 1}
@@ -2741,7 +2764,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 (Font)              scaled to size 9.60004pt on input line 2.
-question1.tex:4: Missing number, treated as zero.
+q1.tex:4: Missing number, treated as zero.
 <to be read again> 
                    \relax 
 l.4     \section{ΑΝΑΛΥΣΗ ΣΥΝΟΛΟΥ ΔΕΔΟΜΕΝΩΝ}
@@ -2750,7 +2773,7 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-question1.tex:4: Illegal unit of measure (pt inserted).
+q1.tex:4: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
 l.4     \section{ΑΝΑΛΥΣΗ ΣΥΝΟΛΟΥ ΔΕΔΟΜΕΝΩΝ}
@@ -2762,18 +2785,18 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-question1.tex:40: Missing $ inserted.
+q1.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40             \end{tabular}}
+l.44             \end{tabular}}
                                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-question1.tex:40: Missing $ inserted.
+q1.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40             \end{tabular}}
+l.44             \end{tabular}}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2781,18 +2804,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-question1.tex:40: Missing $ inserted.
+q1.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40             \end{tabular}}
+l.44             \end{tabular}}
                                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-question1.tex:40: Missing $ inserted.
+q1.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40             \end{tabular}}
+l.44             \end{tabular}}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2800,18 +2823,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-question1.tex:40: Missing $ inserted.
+q1.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40             \end{tabular}}
+l.44             \end{tabular}}
                                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-question1.tex:40: Missing $ inserted.
+q1.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40             \end{tabular}}
+l.44             \end{tabular}}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2819,18 +2842,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-question1.tex:40: Missing $ inserted.
+q1.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40             \end{tabular}}
+l.44             \end{tabular}}
                                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-question1.tex:40: Missing $ inserted.
+q1.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40             \end{tabular}}
+l.44             \end{tabular}}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2838,18 +2861,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-question1.tex:40: Missing $ inserted.
+q1.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40             \end{tabular}}
+l.44             \end{tabular}}
                                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-question1.tex:40: Missing $ inserted.
+q1.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40             \end{tabular}}
+l.44             \end{tabular}}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2857,18 +2880,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-question1.tex:40: Missing $ inserted.
+q1.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40             \end{tabular}}
+l.44             \end{tabular}}
                                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-question1.tex:40: Missing $ inserted.
+q1.tex:44: Missing $ inserted.
 <inserted text> 
                 $
-l.40             \end{tabular}}
+l.44             \end{tabular}}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2876,18 +2899,297 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-question1.tex:63: Missing $ inserted.
+LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
+(Font)              scaled to size 8.00003pt on input line 50.
+q1.tex:58: Missing $ inserted.
 <inserted text> 
                 $
-l.63             \end{tabular}}
+l.58             \item \texttt
+                              {\textbf{count}}: ο συνολικός αριθμός των μη-μ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:58: Extra }, or forgotten $.
+\llap  #1->\hb@xt@ \z@ {\hss #1}
+                                
+l.58             \item \texttt
+                              {\textbf{count}}: ο συνολικός αριθμός των μη-μ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+q1.tex:58: Missing $ inserted.
+<inserted text> 
+                $
+l.58             \item \texttt
+                              {\textbf{count}}: ο συνολικός αριθμός των μη-μ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:58: Missing } inserted.
+<inserted text> 
+                }
+l.58             \item \texttt
+                              {\textbf{count}}: ο συνολικός αριθμός των μη-μ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+LaTeX Font Info:    Font shape `TU/CourierNew(0)/b/n' will be
+(Font)              scaled to size 9.60004pt on input line 58.
+q1.tex:59: Missing $ inserted.
+<inserted text> 
+                $
+l.59             \item \texttt
+                              {\textbf{mean}}: ο μέσος όρος των τιμών για κά...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:59: Extra }, or forgotten $.
+\llap  #1->\hb@xt@ \z@ {\hss #1}
+                                
+l.59             \item \texttt
+                              {\textbf{mean}}: ο μέσος όρος των τιμών για κά...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+q1.tex:59: Missing $ inserted.
+<inserted text> 
+                $
+l.59             \item \texttt
+                              {\textbf{mean}}: ο μέσος όρος των τιμών για κά...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:59: Missing } inserted.
+<inserted text> 
+                }
+l.59             \item \texttt
+                              {\textbf{mean}}: ο μέσος όρος των τιμών για κά...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+q1.tex:60: Missing $ inserted.
+<inserted text> 
+                $
+l.60             \item \texttt
+                              {\textbf{min}}: η ελάχιστη τιμή για κάθε στήλη.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:60: Extra }, or forgotten $.
+\llap  #1->\hb@xt@ \z@ {\hss #1}
+                                
+l.60             \item \texttt
+                              {\textbf{min}}: η ελάχιστη τιμή για κάθε στήλη.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+q1.tex:60: Missing $ inserted.
+<inserted text> 
+                $
+l.60             \item \texttt
+                              {\textbf{min}}: η ελάχιστη τιμή για κάθε στήλη.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:60: Missing } inserted.
+<inserted text> 
+                }
+l.60             \item \texttt
+                              {\textbf{min}}: η ελάχιστη τιμή για κάθε στήλη.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+q1.tex:61: Missing $ inserted.
+<inserted text> 
+                $
+l.61             \item \texttt
+                              {\textbf{25\%}}: η τιμή του 25ου εκατοστημορίο...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:61: Extra }, or forgotten $.
+\llap  #1->\hb@xt@ \z@ {\hss #1}
+                                
+l.61             \item \texttt
+                              {\textbf{25\%}}: η τιμή του 25ου εκατοστημορίο...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+q1.tex:61: Missing $ inserted.
+<inserted text> 
+                $
+l.61             \item \texttt
+                              {\textbf{25\%}}: η τιμή του 25ου εκατοστημορίο...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:61: Missing } inserted.
+<inserted text> 
+                }
+l.61             \item \texttt
+                              {\textbf{25\%}}: η τιμή του 25ου εκατοστημορίο...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+q1.tex:62: Missing $ inserted.
+<inserted text> 
+                $
+l.62             \item \texttt
+                              {\textbf{50\%}}: η τιμή του 50ου εκατοστημορίο...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:62: Extra }, or forgotten $.
+\llap  #1->\hb@xt@ \z@ {\hss #1}
+                                
+l.62             \item \texttt
+                              {\textbf{50\%}}: η τιμή του 50ου εκατοστημορίο...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+q1.tex:62: Missing $ inserted.
+<inserted text> 
+                $
+l.62             \item \texttt
+                              {\textbf{50\%}}: η τιμή του 50ου εκατοστημορίο...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:62: Missing } inserted.
+<inserted text> 
+                }
+l.62             \item \texttt
+                              {\textbf{50\%}}: η τιμή του 50ου εκατοστημορίο...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+q1.tex:63: Missing $ inserted.
+<inserted text> 
+                $
+l.63             \item \texttt
+                              {\textbf{75\%}}: η τιμή του 75ου εκατοστημορίο...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:63: Extra }, or forgotten $.
+\llap  #1->\hb@xt@ \z@ {\hss #1}
+                                
+l.63             \item \texttt
+                              {\textbf{75\%}}: η τιμή του 75ου εκατοστημορίο...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+q1.tex:63: Missing $ inserted.
+<inserted text> 
+                $
+l.63             \item \texttt
+                              {\textbf{75\%}}: η τιμή του 75ου εκατοστημορίο...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:63: Missing } inserted.
+<inserted text> 
+                }
+l.63             \item \texttt
+                              {\textbf{75\%}}: η τιμή του 75ου εκατοστημορίο...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+q1.tex:64: Missing $ inserted.
+<inserted text> 
+                $
+l.64             \item \texttt
+                              {\textbf{max}}: η μέγιστη τιμή για κάθε στήλη.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:64: Extra }, or forgotten $.
+\llap  #1->\hb@xt@ \z@ {\hss #1}
+                                
+l.64             \item \texttt
+                              {\textbf{max}}: η μέγιστη τιμή για κάθε στήλη.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+q1.tex:64: Missing $ inserted.
+<inserted text> 
+                $
+l.64             \item \texttt
+                              {\textbf{max}}: η μέγιστη τιμή για κάθε στήλη.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+q1.tex:64: Missing } inserted.
+<inserted text> 
+                }
+l.64             \item \texttt
+                              {\textbf{max}}: η μέγιστη τιμή για κάθε στήλη.
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.96603pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.96603pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
+
+[2]
+q1.tex:84: Missing $ inserted.
+<inserted text> 
+                $
+l.84             \end{tabular}}
                                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-question1.tex:63: Missing $ inserted.
+q1.tex:84: Missing $ inserted.
 <inserted text> 
                 $
-l.63             \end{tabular}}
+l.84             \end{tabular}}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2895,18 +3197,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-question1.tex:63: Missing $ inserted.
+q1.tex:84: Missing $ inserted.
 <inserted text> 
                 $
-l.63             \end{tabular}}
+l.84             \end{tabular}}
                                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-question1.tex:63: Missing $ inserted.
+q1.tex:84: Missing $ inserted.
 <inserted text> 
                 $
-l.63             \end{tabular}}
+l.84             \end{tabular}}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2914,18 +3216,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-question1.tex:63: Missing $ inserted.
+q1.tex:84: Missing $ inserted.
 <inserted text> 
                 $
-l.63             \end{tabular}}
+l.84             \end{tabular}}
                                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-question1.tex:63: Missing $ inserted.
+q1.tex:84: Missing $ inserted.
 <inserted text> 
                 $
-l.63             \end{tabular}}
+l.84             \end{tabular}}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2933,18 +3235,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-question1.tex:63: Missing $ inserted.
+q1.tex:84: Missing $ inserted.
 <inserted text> 
                 $
-l.63             \end{tabular}}
+l.84             \end{tabular}}
                                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-question1.tex:63: Missing $ inserted.
+q1.tex:84: Missing $ inserted.
 <inserted text> 
                 $
-l.63             \end{tabular}}
+l.84             \end{tabular}}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2952,18 +3254,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-question1.tex:63: Missing $ inserted.
+q1.tex:84: Missing $ inserted.
 <inserted text> 
                 $
-l.63             \end{tabular}}
+l.84             \end{tabular}}
                                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-question1.tex:63: Missing $ inserted.
+q1.tex:84: Missing $ inserted.
 <inserted text> 
                 $
-l.63             \end{tabular}}
+l.84             \end{tabular}}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2971,18 +3273,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-question1.tex:63: Missing $ inserted.
+q1.tex:84: Missing $ inserted.
 <inserted text> 
                 $
-l.63             \end{tabular}}
+l.84             \end{tabular}}
                                
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-question1.tex:63: Missing $ inserted.
+q1.tex:84: Missing $ inserted.
 <inserted text> 
                 $
-l.63             \end{tabular}}
+l.84             \end{tabular}}
                                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2990,20 +3292,84 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-question1.tex:68: Missing number, treated as zero.
+q1.tex:91: Missing number, treated as zero.
 <to be read again> 
                    \relax 
-l.68     \section{ΓΡΑΦΙΚΕΣ ΠΑΡΑΣΤΑΣΕΙΣ}
+l.91     \section{ΓΡΑΦΙΚΕΣ ΠΑΡΑΣΤΑΣΕΙΣ}
                                        
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-question1.tex:68: Illegal unit of measure (pt inserted).
+q1.tex:91: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
-l.68     \section{ΓΡΑΦΙΚΕΣ ΠΑΡΑΣΤΑΣΕΙΣ}
+l.91     \section{ΓΡΑΦΙΚΕΣ ΠΑΡΑΣΤΑΣΕΙΣ}
                                        
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+File: ./img/df_combined_boxplot.png Graphic file (type bmp)
+<./img/df_combined_boxplot.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.96603pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.96603pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
+
+[3]
+File: ./img/S015_back_subplots.png Graphic file (type bmp)
+<./img/S015_back_subplots.png>
+File: ./img/S015_thigh_subplots.png Graphic file (type bmp)
+<./img/S015_thigh_subplots.png>
+File: ./img/S027_back_subplots.png Graphic file (type bmp)
+<./img/S027_back_subplots.png>
+File: ./img/S027_thigh_subplots.png Graphic file (type bmp)
+<./img/S027_thigh_subplots.png>
+) (q2.tex
+\textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
+extiota \textomicron  2.
+q2.tex:1: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.1 \chapter{ΕΡΩΤΗΜΑ 2}
+                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+q2.tex:1: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.1 \chapter{ΕΡΩΤΗΜΑ 2}
+                       
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+q2.tex:3: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.3     \section{NEURAL NETWORKS}
+                                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+q2.tex:3: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.3     \section{NEURAL NETWORKS}
+                                 
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -3014,13 +3380,13 @@ two letters. (See Chapter 27 of The TeXbook.)
 )
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.96603pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.96603pt}.
+(fancyhdr)                Make it at least 15.89404pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.89404pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
+(fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
 
-[2] (W:/PycharmProjects\DataMining\Report\auxil\main.aux)
+[4] (W:/PycharmProjects\DataMining\Report\auxil\main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -3030,12 +3396,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41710 strings out of 409554
- 968402 string characters out of 5779086
- 1942148 words of memory out of 5000000
- 63331 multiletter control sequences out of 15000+600000
- 562039 words of font info for 118 fonts, out of 8000000 for 9000
+ 42392 strings out of 409554
+ 977471 string characters out of 5779086
+ 1940148 words of memory out of 5000000
+ 63978 multiletter control sequences out of 15000+600000
+ 565005 words of font info for 136 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 106i,12n,110p,1638b,5080s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 106i,14n,110p,1638b,5080s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on W:/PycharmProjects\DataMining\Report\out\main.pdf (3 pages).
+Output written on W:/PycharmProjects\DataMining\Report\out\main.pdf (5 pages).

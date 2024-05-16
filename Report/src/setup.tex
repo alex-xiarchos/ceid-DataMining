@@ -19,11 +19,12 @@
 \usepackage{graphicx} % Διαχείριση εικόνων
 \usepackage{enumitem} % Διαμόρφωση λιστών
 \usepackage{listings} % Block κώδικα
-\usepackage{arabicore}
-\usepackage{booktabs}
-\usepackage{titleps}
-\usepackage{biblatex}
-\usepackage{lstmisc}
+\usepackage{arabicore} %
+\usepackage{booktabs} % πίνακες
+\usepackage{titleps} % επικεφαλίδες και υποσέλιδα
+\usepackage{biblatex} % διαχείριση βιβλιογραφίας
+\usepackage{lstmisc} %
+
 \graphicspath{ {./img/} }
 %\usepackage[fontsize=13pt]{fontsize}
 
@@ -122,6 +123,7 @@
 % Συνεχόμενη αρίθμηση ανά chapters
 \counterwithout{footnote}{chapter}
 
+% Για γραμμές κώδικα
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{gray!10},
     keywordstyle=\bf\ttfamily,
@@ -137,5 +139,7 @@
 }
 \lstset{style=mystyle}
 
+\usepackage{float} % Allows for more flexible positioning of floats σε πίνακες πχ
+\restylefloat{table}
 
 \endinput
