@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.5.2)  19 MAY 2024 03:57
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.5.2)  19 MAY 2024 13:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3364,13 +3364,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
 
 [4]
-File: ./img/S009_heatmap.png Graphic file (type bmp)
-<./img/S009_heatmap.png>
+File: ./img/S008_heatmap.png Graphic file (type bmp)
+<./img/S008_heatmap.png>
 File: ./img/S015_heatmap.png Graphic file (type bmp)
 <./img/S015_heatmap.png>
 File: ./img/df_combined_heatmap.png Graphic file (type bmp)
 <./img/df_combined_heatmap.png>
-) (q2.tex
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.89404pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.89404pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
+
+[5] (q2.tex
 \textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
 extiota \textomicron  2.
 q2.tex:1: Missing number, treated as zero.
@@ -3418,13 +3427,13 @@ two letters. (See Chapter 27 of The TeXbook.)
 )
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 15.89404pt, for example:
-(fancyhdr)                \setlength{\headheight}{15.89404pt}.
+(fancyhdr)                Make it at least 15.96603pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.96603pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
+(fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
 
-[5] (W:/PycharmProjects\DataMining\Report\auxil\main.aux)
+[6] (W:/PycharmProjects\DataMining\Report\auxil\main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -3442,4 +3451,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  106i,12n,110p,1638b,5080s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on W:/PycharmProjects\DataMining\Report\out\main.pdf (6 pages).
+Output written on W:/PycharmProjects\DataMining\Report\out\main.pdf (7 pages).
