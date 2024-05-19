@@ -2,5 +2,5 @@
 \contentsline {chapter}{\numberline {1}ΕΡΩΤΗΜΑ 1}{2}{}%
 \contentsline {section}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }ΑΝΑΛΥΣΗ ΣΥΝΟΛΟΥ ΔΕΔΟΜΕΝΩΝ}{2}{}%
 \contentsline {section}{\numberline {\if@rl \I {2.1}\else \textLR {1.2}\fi }ΓΡΑΦΙΚΕΣ ΠΑΡΑΣΤΑΣΕΙΣ}{3}{}%
-\contentsline {chapter}{\numberline {2}ΕΡΩΤΗΜΑ 2}{4}{}%
-\contentsline {section}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }NEURAL NETWORKS}{4}{}%
+\contentsline {chapter}{\numberline {2}ΕΡΩΤΗΜΑ 2}{5}{}%
+\contentsline {section}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }NEURAL NETWORKS}{5}{}%
