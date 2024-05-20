@@ -135,30 +135,38 @@
         \end{multicols}
 
         Χρησιμοποιώντας την \texttt{plot()}, μπορούμε να δημιουργήσουμε subplots για τις στήλες \texttt{back}\(_{x,y,z}\)
-        και \texttt{thigh}\(_{x,y,z}\) ενός τυχαίου συμμετέχοντα, \texttt{S015}:
+        και \texttt{thigh}\(_{x,y,z}\). Αυτά, για παράδειγμα, είναι τα subplots για τον συμμετέχοντα \texttt{S015}:
 
         \begin{multicols}{2} \centering
-            \noindent\includegraphics[scale=0.55]{img/distributions/S015_back_subplots}
-            \includegraphics[scale=0.55]{img/distributions/S015_thigh_subplots}
+            \noindent\includegraphics[scale=0.55]{img/distributions/S015_back_distributions}
+            \includegraphics[scale=0.55]{img/distributions/S015_thigh_distributions}
         \end{multicols}
 
-        Καταρχάς είναι προφανές ότι υπάρχει μια αντιστοιχία μεταξύ των κινήσεων της πλάτης και του μηρού, καθώς παρατηρούμε ομοιότητες στα διαγράμματα.
-        Φαίνεται ότι ο συμμετέχοντας κατά τη διάρκεια της μέτρησης μεταβάλλει τη φυσική του δραστηριότητα, καθώς υπάρχουν στιγμές που δεν
-        υπάρχουν έντονες διακυμάνσεις των τιμών των μετρήσεων των αισθητήρων (κάτι που αποτυπώνεται και στη τιμή του \texttt{label}, καθώς φαίνεται να είναι \texttt{8 - Standing})
-        και άλλες όπου είναι πιο ενεργός, με την τιμή του \texttt{label} να αλλάζει και αυτή. Μάλιστα, δεδομένου της έντονης μεταβολής του \texttt{label},
-        μπορούμε να υποθέσουμε πως ο συμμετέχοντας ανεβοκατεβαίνει σκάλες.
+        Φαίνεται ότι ο συμμετέχοντας κατά τη διάρκεια της μέτρησης μεταβάλλει τη φυσική του δραστηριότητα (μάλιστα με παρόμοιο τρόπο σε πλάτη και μηρό),
+        καθώς υπάρχουν στιγμές που δεν υπάρχουν έντονες διακυμάνσεις των τιμών των μετρήσεων των αισθητήρων και άλλες όπου είναι πιο ενεργός,
+        με την τιμή του \texttt{label} να αλλάζει και αυτή. Στις στιγμές που ο συμμετέχοντας δεν κινείται, το \texttt{label}
+        φαίνεται να παίρνει την τιμή \texttt{8 - Standing} που επιβεβαιώνει τη στασιμότητά του.
 
-        Από την άλλη, για παράδειγμα στον συμμετέχοντα \texttt{S027}, η \texttt{label} παραμένει σταθερή καθ'όλη τη διάρκεια της έντονης φυσικής δραστηριότητας,
-        με τιμή κοντά στο 2.5, κάτι από το οποίο μπορούμε να συμπεράνουμε πως ο συμμετέχοντας τρέχει:
-
+        Από την άλλη, στον συμμετέχοντα \texttt{S029} παρατηρούμε πως η κίνηση της πλάτης δεν ταυτίζεται με την (έντονη) κίνηση των μηρών,
+        κάτι που μας οδηγεί στο συμπέρασμα πως ο συμμετέχοντας κάνει ποδήλατο.
+        Το γεγονός αυτό επιβεβαιώνεται και από τα spikes του \texttt{label} στις τιμές 100.
         \pagebreak
+
         \begin{multicols}{2} \centering
-            \noindent\includegraphics[scale=0.55]{img/distributions/S027_back_subplots}
-            \includegraphics[scale=0.55]{img/distributions/S027_thigh_subplots}
+            \noindent\includegraphics[scale=0.55]{img/distributions/S029_back_distributions}
+            \includegraphics[scale=0.55]{img/distributions/S029_thigh_distributions}
+        \end{multicols}
+
+        Τέλος, για τον συμμετέχοντα \texttt{S027}, φαίνεται να έχει μια πολύ έντονη φυσική δραστηριότητα με τη \texttt{label}
+        να παραμένει σταθερή με τιμή κοντά στο 2.5, κάτι από το οποίο μπορούμε να συμπεράνουμε πως ο συμμετέχοντας τρέχει:
+
+        \begin{multicols}{2} \centering
+            \noindent\includegraphics[scale=0.55]{img/distributions/S027_back_distributions}
+            \includegraphics[scale=0.55]{img/distributions/S027_thigh_distributions}
         \end{multicols}
 
         Τέλος, για τον εντοπισμό συσχετίσεων, μπορούμε να δημιουργήσουμε ένα \texttt{heatmap()} μέσω της \texttt{seaborn}.
-        Για παράδειγμα, για τον συμμετέχοντα \texttt{S008} φαίνεται πως υπάρχει μια σαφής συσχέτιση ανάμεσα στις στήλες \verb|back_x| + \verb|back_z|,
+        Για παράδειγμα, για τον συμμετέχοντα \texttt{S008} φαίνεται πως υπάρχει μια κάποια συσχέτιση ανάμεσα στις στήλες \verb|back_x| + \verb|back_z|,
         \verb|thigh_x| + \verb|thigh_z| και \verb|back_z| + \verb|thigh_x| ενώ στον \texttt{S015} ανάμεσα στις στήλες \verb|back_x| + \verb|back_z| και \verb|back_y| + \verb|thigh_y|.
 
         \begin{multicols}{2} \centering
@@ -175,6 +183,5 @@
         \end{center}
 
         \begin{graycomment} \centering
-            Στο παράρτημα παρατίθονται τα plots και τα heatmaps για όλους τους συμμετέχοντες.
+            Στο παράρτημα παρατίθενται τα plots και τα heatmaps για όλους τους συμμετέχοντες.
         \end{graycomment}
-\pagebreak

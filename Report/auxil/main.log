@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.5.2)  20 MAY 2024 21:45
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.5.2)  20 MAY 2024 23:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3322,14 +3322,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
 
 [3]
-File: ./img/S009_back_distributions.png Graphic file (type bmp)
-<./img/S009_back_distributions.png>
-File: ./img/S009_thigh_distributions.png Graphic file (type bmp)
-<./img/S009_thigh_distributions.png>
-File: ./img/S015_back_subplots.png Graphic file (type bmp)
-<./img/S015_back_subplots.png>
-File: ./img/S015_thigh_subplots.png Graphic file (type bmp)
-<./img/S015_thigh_subplots.png>
+File: img/distributions/S009_back_distributions.png Graphic file (type bmp)
+<img/distributions/S009_back_distributions.png>
+File: img/distributions/S009_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S009_thigh_distributions.png>
+File: img/distributions/S015_back_distributions.png Graphic file (type bmp)
+<img/distributions/S015_back_distributions.png>
+File: img/distributions/S015_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S015_thigh_distributions.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3340,17 +3340,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
 
 [4]
-File: ./img/S027_back_subplots.png Graphic file (type bmp)
-<./img/S027_back_subplots.png>
-File: ./img/S027_thigh_subplots.png Graphic file (type bmp)
-<./img/S027_thigh_subplots.png>
-File: ./img/S008_heatmap.png Graphic file (type bmp)
-<./img/S008_heatmap.png>
-File: ./img/S015_heatmap.png Graphic file (type bmp)
-<./img/S015_heatmap.png>
-File: ./img/df_combined_heatmap.png Graphic file (type bmp)
-<./img/df_combined_heatmap.png>
-)
+File: img/distributions/S029_back_distributions.png Graphic file (type bmp)
+<img/distributions/S029_back_distributions.png>
+File: img/distributions/S029_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S029_thigh_distributions.png>
+File: img/distributions/S027_back_distributions.png Graphic file (type bmp)
+<img/distributions/S027_back_distributions.png>
+File: img/distributions/S027_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S027_thigh_distributions.png>
+File: img/heatmaps/S008_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S008_heatmap.png>
+File: img/heatmaps/S015_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S015_heatmap.png>
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 173--175
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 173--175
+ [] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.89404pt, for example:
@@ -3359,67 +3370,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
 
-[5] (q2.tex
+[5]
+File: ./img/df_combined_heatmap.png Graphic file (type bmp)
+<./img/df_combined_heatmap.png>
+) (appendix.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.96603pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.96603pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
+
+[6]
 \textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
 extiota \textomicron  2.
-q2.tex:1: Missing number, treated as zero.
+appendix.tex:2: Missing number, treated as zero.
 <to be read again> 
                    \relax 
-l.1 \chapter{ΕΡΩΤΗΜΑ 2}
+l.2 \chapter{ΠΑΡΑΡΤΗΜΑ}
                        
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-q2.tex:1: Illegal unit of measure (pt inserted).
+appendix.tex:2: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
-l.1 \chapter{ΕΡΩΤΗΜΑ 2}
-                       
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-q2.tex:3: Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.3     \section{NEURAL NETWORKS}
-                                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-q2.tex:3: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.3     \section{NEURAL NETWORKS}
-                                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-) (appendix.tex
-\textKappa \textepsilon \textphi \acctonos \textalpha \textlambda \textalpha \t
-extiota \textomicron  3.
-appendix.tex:1: Missing number, treated as zero.
-<to be read again> 
-                   \relax 
-l.1 \chapter{ΠΑΡΑΡΤΗΜΑ}
-                       
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-appendix.tex:1: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \relax 
-l.1 \chapter{ΠΑΡΑΡΤΗΜΑ}
+l.2 \chapter{ΠΑΡΑΡΤΗΜΑ}
                        
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
@@ -3431,8 +3409,8 @@ two letters. (See Chapter 27 of The TeXbook.)
 appendix.tex:3: Missing number, treated as zero.
 <to be read again> 
                    \relax 
-l.3 \section{ΓΡΑΦΙΚΕΣ ΠΑΡΑΣΤΑΣΕΙΣ}
-                                  
+l.3     \section{PLOTS}
+                       
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
@@ -3440,8 +3418,8 @@ look up `weird error' in the index to The TeXbook.)
 appendix.tex:3: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
-l.3 \section{ΓΡΑΦΙΚΕΣ ΠΑΡΑΣΤΑΣΕΙΣ}
-                                  
+l.3     \section{PLOTS}
+                       
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
 I'll assume that you meant to say pt, for printer's points.
@@ -3449,7 +3427,40 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-)
+File: img/distributions/S006_back_distributions.png Graphic file (type bmp)
+<img/distributions/S006_back_distributions.png>
+File: img/distributions/S006_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S006_thigh_distributions.png>
+File: img/distributions/S008_back_distributions.png Graphic file (type bmp)
+<img/distributions/S008_back_distributions.png>
+File: img/distributions/S008_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S008_thigh_distributions.png>
+File: img/distributions/S009_back_distributions.png Graphic file (type bmp)
+<img/distributions/S009_back_distributions.png>
+File: img/distributions/S009_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S009_thigh_distributions.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.89404pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.89404pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
+
+[7]
+File: img/distributions/S010_back_distributions.png Graphic file (type bmp)
+<img/distributions/S010_back_distributions.png>
+File: img/distributions/S010_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S010_thigh_distributions.png>
+File: img/distributions/S012_back_distributions.png Graphic file (type bmp)
+<img/distributions/S012_back_distributions.png>
+File: img/distributions/S012_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S012_thigh_distributions.png>
+File: img/distributions/S013_back_distributions.png Graphic file (type bmp)
+<img/distributions/S013_back_distributions.png>
+File: img/distributions/S013_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S013_thigh_distributions.png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 15.96603pt, for example:
@@ -3458,7 +3469,284 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
 
-[6] (W:/PycharmProjects\DataMining\Report\auxil\main.aux)
+[8]
+File: img/distributions/S014_back_distributions.png Graphic file (type bmp)
+<img/distributions/S014_back_distributions.png>
+File: img/distributions/S014_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S014_thigh_distributions.png>
+File: img/distributions/S015_back_distributions.png Graphic file (type bmp)
+<img/distributions/S015_back_distributions.png>
+File: img/distributions/S015_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S015_thigh_distributions.png>
+File: img/distributions/S016_back_distributions.png Graphic file (type bmp)
+<img/distributions/S016_back_distributions.png>
+File: img/distributions/S016_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S016_thigh_distributions.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.96603pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.96603pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
+
+[9]
+File: img/distributions/S017_back_distributions.png Graphic file (type bmp)
+<img/distributions/S017_back_distributions.png>
+File: img/distributions/S017_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S017_thigh_distributions.png>
+File: img/distributions/S018_back_distributions.png Graphic file (type bmp)
+<img/distributions/S018_back_distributions.png>
+File: img/distributions/S018_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S018_thigh_distributions.png>
+File: img/distributions/S019_back_distributions.png Graphic file (type bmp)
+<img/distributions/S019_back_distributions.png>
+File: img/distributions/S019_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S019_thigh_distributions.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.96603pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.96603pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
+
+[10]
+File: img/distributions/S020_back_distributions.png Graphic file (type bmp)
+<img/distributions/S020_back_distributions.png>
+File: img/distributions/S020_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S020_thigh_distributions.png>
+File: img/distributions/S021_back_distributions.png Graphic file (type bmp)
+<img/distributions/S021_back_distributions.png>
+File: img/distributions/S021_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S021_thigh_distributions.png>
+File: img/distributions/S022_back_distributions.png Graphic file (type bmp)
+<img/distributions/S022_back_distributions.png>
+File: img/distributions/S022_thigh_distributions.png Graphic file (type bmp)
+<img/distributions/S022_thigh_distributions.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.89404pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.89404pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
+
+[11]
+appendix.tex:75: Missing number, treated as zero.
+<to be read again> 
+                   \relax 
+l.75     \section{HEATMAPS}
+                           
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+appendix.tex:75: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \relax 
+l.75     \section{HEATMAPS}
+                           
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+File: img/heatmaps/S006_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S006_heatmap.png>
+File: img/heatmaps/S008_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S008_heatmap.png>
+File: img/heatmaps/S009_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S009_heatmap.png>
+File: img/heatmaps/S010_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S010_heatmap.png>
+File: img/heatmaps/S012_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S012_heatmap.png>
+File: img/heatmaps/S013_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S013_heatmap.png>
+File: img/heatmaps/S014_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S014_heatmap.png>
+File: img/heatmaps/S015_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S015_heatmap.png>
+File: img/heatmaps/S016_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S016_heatmap.png>
+File: img/heatmaps/S017_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S017_heatmap.png>
+File: img/heatmaps/S018_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S018_heatmap.png>
+File: img/heatmaps/S019_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S019_heatmap.png>
+File: img/heatmaps/S020_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S020_heatmap.png>
+File: img/heatmaps/S021_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S021_heatmap.png>
+File: img/heatmaps/S022_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S022_heatmap.png>
+File: img/heatmaps/S023_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S023_heatmap.png>
+File: img/heatmaps/S024_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S024_heatmap.png>
+File: img/heatmaps/S025_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S025_heatmap.png>
+File: img/heatmaps/S026_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S026_heatmap.png>
+File: img/heatmaps/S027_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S027_heatmap.png>
+File: img/heatmaps/S028_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S028_heatmap.png>
+File: img/heatmaps/S029_heatmap.png Graphic file (type bmp)
+<img/heatmaps/S029_heatmap.png>
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Overfull \hbox (17.54327pt too wide) in paragraph at lines 77--100
+ [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.96603pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.96603pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
+
+[12]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.96603pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.96603pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.96603pt}.
+
+[13]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.89404pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.89404pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
+
+[14])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 15.89404pt, for example:
+(fancyhdr)                \setlength{\headheight}{15.89404pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-3.89404pt}.
+
+[15] (W:/PycharmProjects\DataMining\Report\auxil\main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
@@ -3468,12 +3756,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42530 strings out of 409554
- 981562 string characters out of 5779086
+ 42986 strings out of 409554
+ 1003517 string characters out of 5779086
  1941148 words of memory out of 5000000
- 64121 multiletter control sequences out of 15000+600000
+ 64522 multiletter control sequences out of 15000+600000
  563935 words of font info for 129 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  106i,12n,110p,1638b,5080s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on W:/PycharmProjects\DataMining\Report\out\main.pdf (7 pages).
+Output written on W:/PycharmProjects\DataMining\Report\out\main.pdf (16 pages).
+
