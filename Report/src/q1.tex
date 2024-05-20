@@ -1,5 +1,31 @@
 \chapter{ΕΡΩΤΗΜΑ 1}
-    Για την εισαγωγή και την προεπεξεργασία του \texttt{.csv} αρχείου, θα χρησιμοποιήσουμε τις βιβλιοθήκες \texttt{pandas} και \texttt{matplotlib} της Python.
+    Το σύνολο δεδομένων περιλαμβάνει 22 \texttt{.csv} αρχεία που αντιστοιχούν σε 22 συμμετέχοντες. Σύμφωνα με την περιγραφή του dataset,
+    περιλαμβάνεται η στήλη \texttt{timestamp}, με την ημερομηνία και ώρα, οι στήλες \texttt{back}\(_{x,y,z}\) και \texttt{thigh}\(_{x,y,z}\)
+    με τις τιμές του κάθε αισθητήρα για κάθε διάσταση, και η στήλη \texttt{label}, η οποία προσδιορίζει τη δραστηριότητα του συμμετέχοντα τη δεδομένη στιγμή.
+
+    Η στήλη \texttt{label} παίρνει τις εξής τιμές:
+
+    \vspace{-10pt}
+    \begin{multicols}{2} \centering \tt
+        \begin{itemize}[label={}]
+            \addtolength\itemsep{-4mm}
+            \item 1 - Walking
+            \item 2 - Running
+            \item 3 - Shuffling
+            \item 4 - Stairs (ascending)
+            \item 5 - Stairs (descending)
+            \item 6 - Standing
+            \item 8: lying
+            \item 13 - Cycling (sit)
+            \item 14 - Cycling (stand)
+            \item 130 - Cycling (sit, inactive)
+            \item 140 - Cycling (stand, inactive)
+        \end{itemize}
+    \end{multicols}
+    \vspace{-10pt}
+
+    Για την εισαγωγή και την προεπεξεργασία των αρχείων, θα χρησιμοποιήσουμε τη βιβλιοθήκη \texttt{pandas}
+    ενώ για την οπτικοποίηση τις βιβλιοθήκες \texttt{matplotlib} και \texttt{seaborn} της Python.
 
     \section{ΑΝΑΛΥΣΗ ΣΥΝΟΛΟΥ ΔΕΔΟΜΕΝΩΝ}
         Εισάγουμε τα \texttt{.csv} αρχεία μέσω της \texttt{os} βιβλιοθήκης και της \texttt{read\_csv()} συνάρτησης.
@@ -19,31 +45,14 @@
             \end{tabular}}
         \end{table}
 
-        Μέσω της \texttt{info()} παρατηρούμε πώς για κάθε χρονική στιγμή δίνονται οι τιμές των αισθητήρων, αποθηκευμένες ως \texttt{float24},
-        στις τρεις διαστάσεις (x, y, z) για τις περιοχές της πλάτης και του μηρού, καθώς και ένα \texttt{int64} label.
-        Ίδια μορφολογία παρατηρείται σε όλα τα \texttt{.csv} του συνόλου δεδομένων, με κάποιες διαφοροποιήσεις που θα αναλυθούν στη συνέχεια.
+        Μέσω της \texttt{info()} εξάγουμε το συμπέρασμα πώς για κάθε χρονική στιγμή δίνονται οι τιμές των αισθητήρων, αποθηκευμένες ως \texttt{float24},
+        στις τρεις διαστάσεις (x, y, z) για τις περιοχές της πλάτης και του μηρού, καθώς και ένα \texttt{int64} για το \texttt{label}.
+        Η ίδια μορφολογία παρατηρείται σε όλα τα \texttt{.csv} του συνόλου δεδομένων, με κάποιες διαφοροποιήσεις που θα αναλυθούν στη συνέχεια.
 
-        \begin{table}[ht] \noindent\centering\tt
-        \resizebox{0.45\textwidth}{!}{
-            \begin{tabular}{lcccc}
-            # & Column & Non-Null & Count & Dtype \\
-            \midrule
-            0 & timestamp & 408709 & non-null & object \\
-            1 & back\_x & 408709 & non-null & float64 \\
-            2 & back\_y & 408709 & non-null & float64 \\
-            3 & back\_z & 408709 & non-null & float64 \\
-            4 & thigh\_x & 408709 & non-null & float64 \\
-            5 & thigh\_y & 408709 & non-null & float64 \\
-            6 & thigh\_z & 408709 & non-null & float64 \\
-            7 & label & 408709 & non-null & int64 & \\
-            \end{tabular}}
-        \end{table}
-        \vspace{-20pt}
+        Παρόλο που στην περιγραφή αναφέρεται πως δεν υπάρχουν missing values, για να ελέγξουμε την ακεραιότητα του dataset, μέσω της συνάρτησης
+        \texttt{concat()} ενώνουμε όλα τα 22 αρχεία σε ένα ενιαίο dataframe. Τρέχοντας την \texttt{isnull().sum()}, έχουμε:
 
-        Για να ελέγξουμε την ακεραιότητα και να εντοπίσουμε τυχούσες συνέπειες, μέσω της συνάρτησης \texttt{concat()} ενώνουμε όλα τα 22 αρχεία σε ένα ενιαίο dataframe.
-        Τρέχοντας την \texttt{isnull().sum()}, έχουμε:
-
-        \begin{table}[ht] \noindent\centering\tt
+        \begin{table}[h] \noindent\centering\tt
         \resizebox{0.23\textwidth}{!}{
             \begin{tabular}{lr}
              & sum \\
@@ -61,7 +70,7 @@
             \end{tabular}}
         \end{table}
 
-        Παρατηρούμε πως στις στήλες \texttt{back}\(_{x,y,z}\) και \texttt{thigh}\(_{x,y,z}\), οι οποίες είναι και αυτές που μας ενδιαφέρουν, δεν παρατηρούνται missing values.
+        Παρατηρούμε πως στις στήλες \texttt{back}\(_{x,y,z}\) και \texttt{thigh}\(_{x,y,z}\), οι οποίες είναι και αυτές που μας ενδιαφέρουν, όντως δεν παρατηρούνται missing values.
         Όμως, έχουν εμφανιστεί \texttt{NaN} τιμές στις στήλες \texttt{"index"} και \texttt{"Unnamed: 0"}, οι οποίες στήλες μάλλον θα εμφανίζονται επιπλέον σε κάποια αρχεία.
 
         Ελέγχοντας όλα τα αρχεία, η στήλη \texttt{"index"} εμφανίζεται στα αρχεία \texttt{S015.csv} και \texttt{S021.csv} και η στήλη \texttt{"Unnamed: 0"} στο αρχείο \texttt{S023.csv}.
@@ -85,7 +94,7 @@
 
         Ενώνοντας συγκεντρωτικά τις μετρήσεις όλων των συμμετεχόντων στο \texttt{df\_combined} μέσω της \texttt{concat()},
         αυτά είναι τα \textbf{βασικά συγκεντρωτικά στατιστικά μεγέθη} όπως προκύπτουν από το \texttt{describe()}
-        για όλες τις μετρήσεις από τους συμμετέχοντες, έχοντας αφαιρέσει την ετικέτα \texttt{label}:
+        για όλες τις μετρήσεις από τους συμμετέχοντες, έχοντας αφαιρέσει την ετικέτα \texttt{label} μιας και αποτελείται από κατηγορικές τιμές:
 
         \begin{table}[ht] \noindent\centering\tt
         \resizebox{0.85\textwidth}{!}{
@@ -105,54 +114,56 @@
 
         Ως αρχικές παρατηρήσεις, βλέπουμε πως οι τιμές βρίσκονται στο διάστημα \( [-8, 8]\), ενώ η τυπική τους απόκλιση είναι μικρή,
         το οποίο δείχνει ότι οι μετρήσεις είναι αρκετά συμπυκνωμένες γύρω από τον μέσο όρο που είναι κοντά στο μηδέν.
-        Τέλος, μπορούν να διεξαχθούν επιπλέον συμπεράσματα ελέγχοντας κάθε συμμετέχοντα ξεχωριστά.
+        Προφανώς ελέγχοντας κάθε συμμετέχοντα ξεχωριστά, μπορεί να διεξαχθούν αντίστοιχα συμπεράσματα.
 
     \section{ΓΡΑΦΙΚΕΣ ΠΑΡΑΣΤΑΣΕΙΣ}
 
-        Aν χρησιμοποιήσουμε το \texttt{plotbox()} της \texttt{Matplotlib}, μπορούμε να δημιουργήσουμε
+        Μέσω της \texttt{plotbox()} της \texttt{Matplotlib}, μπορούμε να δημιουργήσουμε
         το διάγραμμα των τιμών της \verb|df_combined| για μια πρώτη οπτικοποίηση των δεδομένων:
 
         \begin{center}
             \includegraphics[scale=0.6]{df_combined_boxplot}
         \end{center}
 
-        Πέρα από τις προηγούμενες παρατηρήσεις που φαίνονται πιο πρόδηλα, επιπλέον παρατηρούμε μια συμμετρικότητα κοντά στο μηδέν
-        για κάθε διάσταση. Επίσης, χρησιμοποιώντας την \texttt{displot()}, μπορούμε να οπτικοποιήσουμε το πώς κατανέμονται οι τιμές:
+        Πέρα από τις προηγούμενες παρατηρήσεις που επιβεβαιώνονται, επιπλέον παρατηρούμε μια συμμετρικότητα κοντά στο μηδέν
+        για κάθε διάσταση. Επίσης, χρησιμοποιώντας την \texttt{displot()}, μπορούμε να οπτικοποιήσουμε το πώς κατανέμονται οι τιμές.
+        Ενδεικτικά για τον \texttt{S009}:
 
         \begin{multicols}{2} \centering
-            \includegraphics[scale=0.5]{S009_back_distributions}
-            \includegraphics[scale=0.5]{S009_thigh_distributions}
+            \includegraphics[scale=0.5]{img/distributions/S009_back_distributions}
+            \includegraphics[scale=0.5]{img/distributions/S009_thigh_distributions}
         \end{multicols}
 
-        Χρησιμοποιώντας την \texttt{plot()}, δημιουργούμε subplots για τις στήλες \texttt{back}\(_{x,y,z}\)
+        Χρησιμοποιώντας την \texttt{plot()}, μπορούμε να δημιουργήσουμε subplots για τις στήλες \texttt{back}\(_{x,y,z}\)
         και \texttt{thigh}\(_{x,y,z}\) ενός τυχαίου συμμετέχοντα, \texttt{S015}:
 
         \begin{multicols}{2} \centering
-            \noindent\includegraphics[scale=0.55]{S015_back_subplots}
-            \includegraphics[scale=0.55]{S015_thigh_subplots}
+            \noindent\includegraphics[scale=0.55]{img/distributions/S015_back_subplots}
+            \includegraphics[scale=0.55]{img/distributions/S015_thigh_subplots}
         \end{multicols}
 
-        Είναι προφανές ότι υπάρχει μια αντιστοιχία μεταξύ των κινήσεων της πλάτης και του μηρού, καθώς παρατηρούμε ομοιότητες στα διαγράμματα.
-        Μια παρομοια αντιστοιχία παρατηρείται μεταξύ των τιμών της ετικέτας \texttt{label} με τις κινήσεις των αισθητήρων.
+        Καταρχάς είναι προφανές ότι υπάρχει μια αντιστοιχία μεταξύ των κινήσεων της πλάτης και του μηρού, καθώς παρατηρούμε ομοιότητες στα διαγράμματα.
+        Φαίνεται ότι ο συμμετέχοντας κατά τη διάρκεια της μέτρησης μεταβάλλει τη φυσική του δραστηριότητα, καθώς υπάρχουν στιγμές που δεν
+        υπάρχουν έντονες διακυμάνσεις των τιμών των μετρήσεων των αισθητήρων (κάτι που αποτυπώνεται και στη τιμή του \texttt{label}, καθώς φαίνεται να είναι \texttt{8 - Standing})
+        και άλλες όπου είναι πιο ενεργός, με την τιμή του \texttt{label} να αλλάζει και αυτή. Μάλιστα, δεδομένου της έντονης μεταβολής του \texttt{label},
+        μπορούμε να υποθέσουμε πως ο συμμετέχοντας ανεβοκατεβαίνει σκάλες.
 
-        Παρόλα αυτά αυτό δεν παρατηρείται σε όλους του συμμετέχοντες. Για παράδειγμα, στον συμμετέχοντα \texttt{S027},
-        η \texttt{label} δεν έχει μια εμφανή συσχέτιση με τις μετρήσεις των αισθητήρων.
+        Από την άλλη, για παράδειγμα στον συμμετέχοντα \texttt{S027}, η \texttt{label} παραμένει σταθερή καθ'όλη τη διάρκεια της έντονης φυσικής δραστηριότητας,
+        με τιμή κοντά στο 2.5, κάτι από το οποίο μπορούμε να συμπεράνουμε πως ο συμμετέχοντας τρέχει:
 
+        \pagebreak
         \begin{multicols}{2} \centering
-            \noindent\includegraphics[scale=0.55]{S027_back_subplots}
-            \includegraphics[scale=0.55]{S027_thigh_subplots}
+            \noindent\includegraphics[scale=0.55]{img/distributions/S027_back_subplots}
+            \includegraphics[scale=0.55]{img/distributions/S027_thigh_subplots}
         \end{multicols}
-
-        Είναι προφανές ότι οι στιγμές με έντονες μεταβολές στις τιμές αντιστοιχούν σε κάποια κίνηση των συμμετεχόντων,
-        ενώ στα σημεία που τα γράφηματα παρουσιάζουν ευθεία γραμμή, οι συμμετέχοντες βρίσκονται σε αδράνεια.
 
         Τέλος, για τον εντοπισμό συσχετίσεων, μπορούμε να δημιουργήσουμε ένα \texttt{heatmap()} μέσω της \texttt{seaborn}.
         Για παράδειγμα, για τον συμμετέχοντα \texttt{S008} φαίνεται πως υπάρχει μια σαφής συσχέτιση ανάμεσα στις στήλες \verb|back_x| + \verb|back_z|,
         \verb|thigh_x| + \verb|thigh_z| και \verb|back_z| + \verb|thigh_x| ενώ στον \texttt{S015} ανάμεσα στις στήλες \verb|back_x| + \verb|back_z| και \verb|back_y| + \verb|thigh_y|.
 
         \begin{multicols}{2} \centering
-            \noindent\includegraphics[scale=0.55]{S008_heatmap}
-            \includegraphics[scale=0.55]{S015_heatmap}
+            \noindent\includegraphics[scale=0.55]{img/heatmaps/S008_heatmap}
+            \includegraphics[scale=0.55]{img/heatmaps/S015_heatmap}
         \end{multicols}
 
         Δημιουργώντας heatmap και για το συγκεντρωτικό dataframe \verb|df_combined|, παρατηρούμε μια  αμυδρή συσχέτιση
@@ -163,4 +174,7 @@
             \includegraphics[scale=0.5]{df_combined_heatmap}
         \end{center}
 
+        \begin{graycomment} \centering
+            Στο παράρτημα παρατίθονται τα plots και τα heatmaps για όλους τους συμμετέχοντες.
+        \end{graycomment}
 \pagebreak
