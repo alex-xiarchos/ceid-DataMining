@@ -1,6 +1,27 @@
 \chapter{ΕΡΩΤΗΜΑ 2}
 
-    \section{NEURAL NETWORKS}
+    \section{ΟΡΙΣΜΟΣ ΤΑΞΙΝΟΜΗΤΩΝ}
+
+    Στην συνάρτηση \verb|get_classifier(option)| ορίζονται και μπορούν να επιλεχθούν οι ταξινομητές που θα χρησιμοποιηθούν στη συνέχεια.
+
+    Σε κάθε περίπτωση ταξινομητή, σε καθένα από τα 22 dataframes του dataset αφαιρείται η στήλη \texttt{timestamp},
+    και το dataframe διαχωρίζεται από τη στήλη \texttt{label} στα \texttt{X} και \texttt{Y}. Όταν γίνει ο διαχωρισμός, γίνονται split
+    στα dataframes \texttt{X\_train}, \texttt{X\_test}, \texttt{Y\_train}, \texttt{Y\_test} με \verb|test_size = 0.3|.
+
+    Αφού γίνει η επιλογή του classifier, αυτός γίνεται train μέσω της \verb|fit(X_train, Y_train)| και αποθηκεύονται τα predictions του μέσω της \verb|predict(X_test)|.
+
+    \section{ΑΠΟΤΕΛΣΜΑΤΑ}
+
+        Τρέχουμε κάθε classifier για όλους τους συμμετέχοντες:
+
+    \subsection{NEURAL NETWORKS}
+        \begin{graycomment} \tt
+            Classifier 1 yeilds training accuracy for file S006.csv of 0.9141337173536156 with a testing accuracy of 0.9122442155399509 \\
+            Classifier 1 yeilds training accuracy for file S008.csv of 0.9329507794280103 with a testing accuracy of 0.9315337677112421 \\
+            Classifier 1 yeilds training accuracy for file S009.csv of 0.8956013466020495 with a testing accuracy of 0.891627104013811
+        \end{graycomment}
+
+    \section{ΣΥΜΠΕΡΑΣΜΑΤΑ}
 
 
 
