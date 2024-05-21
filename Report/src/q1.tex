@@ -75,7 +75,7 @@
 
         Ελέγχοντας όλα τα αρχεία, η στήλη \texttt{"index"} εμφανίζεται στα αρχεία \texttt{S015.csv} και \texttt{S021.csv} και η στήλη \texttt{"Unnamed: 0"} στο αρχείο \texttt{S023.csv}.
         Έπειτα από έλεγχο, φαίνεται πως πρόκειται για δείκτες αύξουσας αρίθμησης που δεν προσφέρουν κάποια επιπλέον πληροφορία.
-        Επομένως, μπορούμε να τις αφαιρέσουμε χρησιμοποιώντας τη συνάρτηση \texttt{drop('όνομα', axis=1)}.
+        Επομένως, μπορούμε να τις αφαιρέσουμε χρησιμοποιώντας τη συνάρτηση \texttt{drop('όνομα', axis=1)}. Τα επεξεργασμένα αρχεία αποθηκεύονται με το επίθεμα \texttt{fix}.
 
         Χρησιμοποιώντας τη συνάρτηση \texttt{describe()} μπορούμε να υπολογίσουμε βασικές στατιστικές μετρικές για τα δεδομένα μας.
         Η συνάρτηση επιστρέφει ένα dataframe με τις ακόλουθες στήλες:
@@ -150,7 +150,6 @@
         Από την άλλη, στον συμμετέχοντα \texttt{S029} παρατηρούμε πως η κίνηση της πλάτης δεν ταυτίζεται με την (έντονη) κίνηση των μηρών,
         κάτι που μας οδηγεί στο συμπέρασμα πως ο συμμετέχοντας κάνει ποδήλατο.
         Το γεγονός αυτό επιβεβαιώνεται και από τα spikes του \texttt{label} στις τιμές 100.
-        \pagebreak
 
         \begin{multicols}{2} \centering
             \noindent\includegraphics[scale=0.55]{img/distributions/S029_back_distributions}
@@ -169,6 +168,7 @@
         Για παράδειγμα, για τον συμμετέχοντα \texttt{S008} φαίνεται πως υπάρχει μια κάποια συσχέτιση ανάμεσα στις στήλες \verb|back_x| + \verb|back_z|,
         \verb|thigh_x| + \verb|thigh_z| και \verb|back_z| + \verb|thigh_x| ενώ στον \texttt{S015} ανάμεσα στις στήλες \verb|back_x| + \verb|back_z| και \verb|back_y| + \verb|thigh_y|.
 
+        \pagebreak
         \begin{multicols}{2} \centering
             \noindent\includegraphics[scale=0.55]{img/heatmaps/S008_heatmap}
             \includegraphics[scale=0.55]{img/heatmaps/S015_heatmap}
@@ -185,3 +185,5 @@
         \begin{graycomment} \centering
             Στο παράρτημα παρατίθενται τα plots και τα heatmaps για όλους τους συμμετέχοντες.
         \end{graycomment}
+
+        \vspace{20pt}
