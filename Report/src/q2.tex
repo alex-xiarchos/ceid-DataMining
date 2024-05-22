@@ -17,10 +17,10 @@
     \subsection{NEURAL NETWORKS}
 
         \begin{table}[ht] \noindent\centering\tt
-        \resizebox{0.6\textwidth}{!}{
+        \resizebox{0.5\textwidth}{!}{
             \begin{tabular}{lrr}
-            file & training accuracy & testing accuracy \\
-            \midrule
+                file & training accuracy & testing accuracy \\
+                \midrule
                 S006.csv & 0.9141337173536156 & 0.9122442155399509 \\
                 S008.csv & 0.9329507794280103 & 0.9315337677112421 \\
                 S009.csv & 0.8956013466020495 & 0.8916271040138111 \\
@@ -49,10 +49,10 @@
     \subsection{RANDOM FOREST}
 
         \begin{table}[H] \noindent\centering\tt
-        \resizebox{0.6\textwidth}{!}{
+        \resizebox{0.5\textwidth}{!}{
             \begin{tabular}{lrr}
-            file & training accuracy & testing accuracy \\
-            \midrule
+                file & training accuracy & testing accuracy \\
+                \midrule
                 S006.csv & 1.0 & 0.9306598810892809 \\
                 S008.csv & 1.0 & 0.9432683357598033 \\
                 S009.csv & 0.9999907513595502 & 0.8979499352611136 \\
@@ -78,13 +78,14 @@
             \end{tabular}}
         \end{table}
 
+    \pagebreak
     \subsection{BAYESIAN NETWORKS}
 
         \begin{table}[ht] \noindent\centering\tt
-        \resizebox{0.6\textwidth}{!}{
+        \resizebox{0.5\textwidth}{!}{
             \begin{tabular}{lrr}
-            file & training accuracy & testing accuracy \\
-            \midrule
+                file & training accuracy & testing accuracy \\
+                \midrule
                 S006.csv & 0.8708720149879761 & 0.8709109148295858 \\
                 S008.csv & 0.8950056598884388 & 0.8940945289068156 \\
                 S009.csv & 0.8275868447338242 & 0.8281398359948209 \\
@@ -110,6 +111,26 @@
             \end{tabular}}
         \end{table}
 
+\subsection{ΜΕΣΟΙ ΟΡΟΙ}
 
-% Μικρή διαφορά -> μάλλον δεν έχει overfit
-% Training accuracy >> Testing accuracy -> σίγουρα overfit (καλή απόδοση στα training δεδομένα αλλά γενικεύει άσχημα)
+        Αυτός είναι ο μέσος όρος των αποτελεσμάτων των μοντέλων:
+        \begin{table}[ht] \noindent\centering\tt
+        \resizebox{\textwidth}{!}{
+            \begin{tabular}{llrrrrr}
+                 & classifier & score & accuracy & precision & recall & f1 \\
+                \midrule
+                1 & MLPClassifier & 0.9215787974 & 0.9197436955 & 0.7644127233 & 0.6806597787 & 0.6976677241 \\
+                2 & RandomForestClassifier & 0.9999962322 & 0.9317139313 & 0.8322693957 & 0.7073846769 & 0.7384389196 \\
+                3 & GaussianNB & 0.8403413636 & 0.8403609059 & 0.5568391564 & 0.5460153011 & 0.5208372416 \\
+            \end{tabular}}
+        \end{table}
+
+        \begin{multicols}{2} \centering \noindent
+            \includegraphics[scale=0.5]{img/models_train_test}
+            \includegraphics[scale=0.5]{img/models_metrics}
+        \end{multicols}
+
+\section{ΣΥΜΠΕΡΑΣΜΑΤΑ}
+    Παρατηρούμε πως το training accuracy του Random Forest είναι σχεδόν τέλειο, και μεγαλύτερο από το testing accuracy.
+    Αυτό μας οδηγεί στο συμπέρασμα πως είναι πιθανό να υπάρχει overfitting· υπάρχει υπερβολικά καλή απόδοση στα training δεδομένα και δεν γενικεύει αρκετά ώστε να ανταποκρίνεται στα test δεδομένα.
+    Σε συνδυασμό με την μικρότερη ακρίβεια των Bayesian Networks, η καλύτερη δυνατή επιλογή είναι τα Neural Networks.

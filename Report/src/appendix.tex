@@ -98,3 +98,160 @@
             \includegraphics[scale=0.55]{img/heatmaps/S028_heatmap.png}
             \includegraphics[scale=0.55]{img/heatmaps/S029_heatmap.png}
         \end{multicols}
+
+    \section{ΚΩΔΙΚΑΣ}
+    \subsection{\texttt{data\_analysis.ipynb}}
+
+\begin{lstlisting}[language=Python]
+import seaborn as sns
+import pandas as pd
+import os
+import matplotlib.pyplot as plt
+
+file_list = ['S006.csv','S008.csv','S009.csv','S010.csv','S012.csv','S013.csv','S014.csv','S015_fix.csv','S016.csv',
+         'S017.csv','S018.csv','S019.csv','S020.csv','S021_fix.csv','S022.csv','S023_fix.csv','S024.csv','S025.csv',
+         'S026.csv','S027.csv','S028.csv','S029.csv',]
+
+# Append all df's into a single combined dataframe
+df_combined = pd.DataFrame()
+
+for file in file_list:
+    df = pd.read_csv(os.path.join('harth/', file))
+    df_combined = pd.concat([df_combined, df])
+
+df_combined = df_combined.drop('label', axis=1)
+
+# Αφαίρεση περιττών στηλών
+df = pd.read_csv(os.path.join('harth/', file_list[7]))
+df = df.drop('index', axis=1)
+df.to_csv('harth/S015_fix.csv', index=False)
+
+# Δημιουργία πινάκων
+df = pd.read_csv(os.path.join('harth/', file_list[0]))
+df.head()
+df.info()
+df_combined.describe()
+
+# Δημιουργία γραφημάτων
+for file in file_list:
+    df = pd.read_csv(os.path.join('harth/', file_list[1]))
+    df[['back_x','back_y', 'back_z', 'label']].plot(title= file, subplots=True)
+    plt.show()
+    df[['thigh_x','thigh_y', 'thigh_z', 'label']].plot(title= file, subplots=True)
+    plt.show()
+
+# Heatmaps
+    for file in file_list:
+        df = pd.read_csv(os.path.join('harth/', file))
+        my_columns = ['back_x', 'back_y', 'back_z', 'thigh_x', 'thigh_y', 'thigh_z']
+        df_selected = df[my_columns]
+
+        corr_df = df_selected.corr()
+        sns.heatmap(corr_df, annot=True, cmap='coolwarm')
+        plt.title(file)
+
+        # Αποθήκευση σε αρχείο:
+        folder_path = 'Report/src/img/heatmaps'
+        fig_name = file.replace(".csv","") + '_heatmap.png'
+        plt.savefig(os.path.join(folder_path, fig_name))
+
+        plt.show()
+\end{lstlisting}
+
+    \subsection{\texttt{classifiers.ipynb}}
+
+\begin{lstlisting}[language=Python]
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from sklearn.naive_bayes import GaussianNB
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+import pandas as pd
+import os
+import pickle
+
+file_list = ['S006.csv','S008.csv','S009.csv','S010.csv','S012.csv','S013.csv','S014.csv','S015_fix.csv','S016.csv',
+         'S017.csv','S018.csv','S019.csv','S020.csv','S021_fix.csv','S022.csv','S023_fix.csv','S024.csv','S025.csv',
+         'S026.csv','S027.csv','S028.csv','S029.csv',]
+
+def get_classifier(option):
+    if option == 1:
+        classifier = MLPClassifier(max_iter=500)
+    elif option == 2:
+        classifier = RandomForestClassifier(n_estimators=100, criterion='entropy', random_state=42)
+    elif option == 3:
+        classifier = GaussianNB()
+    else:
+        raise ValueError('Invalid option')
+
+    return classifier
+
+# 1: Neural Network
+# 2: Random Forest
+# 3: Bayesian Network
+
+models_train_acc = []
+models_test_acc = []
+models_precisions = []
+models_recalls = []
+models_f1s = []
+
+for number in range(1, 4):
+    option = number
+    train_acc = []
+    test_acc = []
+    precisions = []
+    recalls = []
+    f1s = []
+    for i, file in enumerate(file_list):
+        df = pd.read_csv(os.path.join('harth/', file))
+        df = df.drop('timestamp', axis = 1)
+
+        X = df.drop(['label'], axis = 1)
+        Y = df['label']
+
+        X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3)
+
+        clf = get_classifier(option)
+        clf = clf.fit(X_train, Y_train)
+        predictions = clf.predict(X_test)
+
+        print(f"Classifier {option} yields training accuracy for file {file} of {clf.score(X_train,Y_train)} with a testing accuracy of {accuracy_score(Y_test, predictions)}")
+
+        train_acc.append(clf.score(X_train,Y_train))
+        test_acc.append(accuracy_score(Y_test, predictions))
+        precisions.append(precision_score(Y_test, predictions, average='macro'))
+        recalls.append(recall_score(Y_test, predictions, average='macro'))
+        f1s.append(f1_score(Y_test, predictions, average='macro'))
+
+    models_train_acc.append(np.mean(train_acc))
+    models_test_acc.append(np.mean(test_acc))
+    models_precisions.append(np.mean(precisions))
+    models_recalls.append(np.mean(recalls))
+    models_f1s.append(np.mean(f1s))
+
+fig = plt.figure("Classification Results")
+x_axis = np.arange(len(models_train_acc))
+plt.bar(x_axis-0.2, models_train_acc, 0.4, label = "Train set")
+plt.bar(x_axis+0.2, models_test_acc, 0.4, label = 'Test Set')
+plt.xticks(x_axis)
+plt.xlabel("Models")
+plt.ylabel("Accuracy")
+plt.legend()
+plt.show()
+
+fig = plt.figure("Classification Results")
+x_axis = np.arange(len(models_train_acc))
+plt.bar(x_axis-0.4, models_test_acc, 0.2, label = "Accuracy")
+plt.bar(x_axis-0.2, models_precisions, 0.2, label = 'Precision')
+plt.bar(x_axis, models_recalls, 0.2, label = 'Recall')
+plt.bar(x_axis+0.2, models_f1s, 0.2, label = 'F1')
+plt.xticks(x_axis)
+plt.xlabel("Models")
+plt.ylabel("Accuracy")
+plt.legend()
+plt.show()
+\end{lstlisting}
