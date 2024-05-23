@@ -1,3 +1,4 @@
+\pagebreak
 \chapter{ΕΡΩΤΗΜΑ 2}
 
     \section{ΟΡΙΣΜΟΣ ΤΑΞΙΝΟΜΗΤΩΝ}
@@ -8,9 +9,14 @@
     και το dataframe διαχωρίζεται από τη στήλη \texttt{label} στα \texttt{X} και \texttt{Y}. Όταν γίνει ο διαχωρισμός, γίνονται split
     στα dataframes \texttt{X\_train}, \texttt{X\_test}, \texttt{Y\_train}, \texttt{Y\_test} με \verb|test_size = 0.3|.
 
+    Ο \texttt{MLPClassifier} τρέχει με \texttt{max\_iter=500}, και ο \texttt{RandomForestClassifier} με \texttt{n\_estimators=100, criterion='entropy'}.
+
     Αφού γίνει η επιλογή του classifier, αυτός γίνεται train μέσω της \verb|fit(X_train, Y_train)| και αποθηκεύονται τα predictions του μέσω της \verb|predict(X_test)|.
 
-    \section{ΑΠΟΤΕΛΣΜΑΤΑ}
+    Το αποτέλεσμα είναι να εκτελούνται και οι τρεις classifiers για όλα τα αρχεία και να αποθηκεύονται το \texttt{training accuracy}
+    όπως επίσης οι μετρικές μέσω της \texttt{sklearn.metrics}: \texttt{testing accuracy}, \texttt{precision}, \texttt{recall} και \texttt{f1}.
+
+    \section{ΑΠΟΤΕΛΕΣΜΑΤΑ}
 
         Τρέχουμε κάθε classifier για όλους τους συμμετέχοντες:
 
@@ -78,7 +84,6 @@
             \end{tabular}}
         \end{table}
 
-    \pagebreak
     \subsection{BAYESIAN NETWORKS}
 
         \begin{table}[ht] \noindent\centering\tt
@@ -113,7 +118,8 @@
 
 \subsection{ΜΕΣΟΙ ΟΡΟΙ}
 
-        Αυτός είναι ο μέσος όρος των αποτελεσμάτων των μοντέλων:
+        Μέσω της \texttt{np.mean()} υπολογίζονται οι μέσοι όροι των αποτελεσμάτων των μοντέλων:
+
         \begin{table}[ht] \noindent\centering\tt
         \resizebox{\textwidth}{!}{
             \begin{tabular}{llrrrrr}

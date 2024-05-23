@@ -1,19 +1,21 @@
 \babel@toc {greek}{}\relax 
-\contentsline {chapter}{\numberline {1}ΕΡΩΤΗΜΑ 1}{2}{}%
-\contentsline {section}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }ΑΝΑΛΥΣΗ ΣΥΝΟΛΟΥ ΔΕΔΟΜΕΝΩΝ}{2}{}%
-\contentsline {section}{\numberline {\if@rl \I {2.1}\else \textLR {1.2}\fi }ΓΡΑΦΙΚΕΣ ΠΑΡΑΣΤΑΣΕΙΣ}{3}{}%
-\contentsline {chapter}{\numberline {2}ΕΡΩΤΗΜΑ 2}{6}{}%
-\contentsline {section}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }ΟΡΙΣΜΟΣ ΤΑΞΙΝΟΜΗΤΩΝ}{6}{}%
-\contentsline {section}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }ΑΠΟΤΕΛΣΜΑΤΑ}{6}{}%
-\contentsline {subsection}{\numberline {\if@rl \I {1.2.2}\else \textLR {2.2.1}\fi }NEURAL NETWORKS}{7}{}%
-\contentsline {subsection}{\numberline {\if@rl \I {2.2.2}\else \textLR {2.2.2}\fi }RANDOM FOREST}{7}{}%
-\contentsline {subsection}{\numberline {\if@rl \I {3.2.2}\else \textLR {2.2.3}\fi }BAYESIAN NETWORKS}{8}{}%
-\contentsline {subsection}{\numberline {\if@rl \I {4.2.2}\else \textLR {2.2.4}\fi }ΜΕΣΟΙ ΟΡΟΙ}{8}{}%
-\contentsline {section}{\numberline {\if@rl \I {3.2}\else \textLR {2.3}\fi }ΣΥΜΠΕΡΑΣΜΑΤΑ}{8}{}%
-\contentsline {chapter}{\numberline {3}ΕΡΩΤΗΜΑ 3}{9}{}%
-\contentsline {chapter}{\numberline {4}ΠΑΡΑΡΤΗΜΑ}{10}{}%
-\contentsline {section}{\numberline {\if@rl \I {1.4}\else \textLR {4.1}\fi }PLOTS}{10}{}%
-\contentsline {section}{\numberline {\if@rl \I {2.4}\else \textLR {4.2}\fi }HEATMAPS}{15}{}%
-\contentsline {section}{\numberline {\if@rl \I {3.4}\else \textLR {4.3}\fi }ΚΩΔΙΚΑΣ}{18}{}%
-\contentsline {subsection}{\numberline {\if@rl \I {1.3.4}\else \textLR {4.3.1}\fi }\texttt {data\_analysis.ipynb}}{18}{}%
-\contentsline {subsection}{\numberline {\if@rl \I {2.3.4}\else \textLR {4.3.2}\fi }\texttt {classifiers.ipynb}}{19}{}%
+\contentsline {chapter}{\numberline {1}ΕΡΩΤΗΜΑ 1}{2}{chapter.1}%
+\contentsline {section}{\numberline {\if@rl \I {1.1}\else \textLR {1.1}\fi }ΑΝΑΛΥΣΗ ΣΥΝΟΛΟΥ ΔΕΔΟΜΕΝΩΝ}{2}{section.1.1}%
+\contentsline {section}{\numberline {\if@rl \I {2.1}\else \textLR {1.2}\fi }ΓΡΑΦΙΚΕΣ ΠΑΡΑΣΤΑΣΕΙΣ}{3}{section.1.2}%
+\contentsline {chapter}{\numberline {2}ΕΡΩΤΗΜΑ 2}{7}{chapter.2}%
+\contentsline {section}{\numberline {\if@rl \I {1.2}\else \textLR {2.1}\fi }ΟΡΙΣΜΟΣ ΤΑΞΙΝΟΜΗΤΩΝ}{7}{section.2.1}%
+\contentsline {section}{\numberline {\if@rl \I {2.2}\else \textLR {2.2}\fi }ΑΠΟΤΕΛΕΣΜΑΤΑ}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.2.2}\else \textLR {2.2.1}\fi }NEURAL NETWORKS}{7}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.2.2}\else \textLR {2.2.2}\fi }RANDOM FOREST}{8}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.2.2}\else \textLR {2.2.3}\fi }BAYESIAN NETWORKS}{8}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {\if@rl \I {4.2.2}\else \textLR {2.2.4}\fi }ΜΕΣΟΙ ΟΡΟΙ}{8}{subsection.2.2.4}%
+\contentsline {section}{\numberline {\if@rl \I {3.2}\else \textLR {2.3}\fi }ΣΥΜΠΕΡΑΣΜΑΤΑ}{9}{section.2.3}%
+\contentsline {chapter}{\numberline {3}ΕΡΩΤΗΜΑ 3}{10}{chapter.3}%
+\contentsline {section}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }ΣΥΜΠΕΡΑΣΜΑΤΑ}{11}{section.3.1}%
+\contentsline {chapter}{\numberline {4}ΠΑΡΑΡΤΗΜΑ}{12}{chapter.4}%
+\contentsline {section}{\numberline {\if@rl \I {1.4}\else \textLR {4.1}\fi }PLOTS}{12}{section.4.1}%
+\contentsline {section}{\numberline {\if@rl \I {2.4}\else \textLR {4.2}\fi }HEATMAPS}{17}{section.4.2}%
+\contentsline {section}{\numberline {\if@rl \I {3.4}\else \textLR {4.3}\fi }ΚΩΔΙΚΑΣ}{20}{section.4.3}%
+\contentsline {subsection}{\numberline {\if@rl \I {1.3.4}\else \textLR {4.3.1}\fi }\texttt {data\_analysis.ipynb}}{20}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {\if@rl \I {2.3.4}\else \textLR {4.3.2}\fi }\texttt {classifiers.ipynb}}{21}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {\if@rl \I {3.3.4}\else \textLR {4.3.3}\fi }\texttt {clustering.ipynb}}{23}{subsection.4.3.3}%

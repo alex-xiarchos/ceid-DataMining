@@ -1,5 +1,5 @@
 \chapter{ΕΡΩΤΗΜΑ 1}
-    Το σύνολο δεδομένων περιλαμβάνει 22 \texttt{.csv} αρχεία που αντιστοιχούν σε 22 συμμετέχοντες. Σύμφωνα με την περιγραφή του dataset,
+    Το σύνολο δεδομένων περιλαμβάνει 22 \texttt{.csv} αρχεία που αντιστοιχούν σε 22 συμμετέχοντες. Σύμφωνα με την \href{https://archive.ics.uci.edu/dataset/779/harth}{περιγραφή} του dataset,
     περιλαμβάνεται η στήλη \texttt{timestamp}, με την ημερομηνία και ώρα, οι στήλες \texttt{back}\(_{x,y,z}\) και \texttt{thigh}\(_{x,y,z}\)
     με τις τιμές του κάθε αισθητήρα για κάθε διάσταση, και η στήλη \texttt{label}, η οποία προσδιορίζει τη δραστηριότητα του συμμετέχοντα τη δεδομένη στιγμή.
 
@@ -47,10 +47,10 @@
 
         Μέσω της \texttt{info()} εξάγουμε το συμπέρασμα πώς για κάθε χρονική στιγμή δίνονται οι τιμές των αισθητήρων, αποθηκευμένες ως \texttt{float24},
         στις τρεις διαστάσεις (x, y, z) για τις περιοχές της πλάτης και του μηρού, καθώς και ένα \texttt{int64} για το \texttt{label}.
-        Η ίδια μορφολογία παρατηρείται σε όλα τα \texttt{.csv} του συνόλου δεδομένων, με κάποιες διαφοροποιήσεις που θα αναλυθούν στη συνέχεια.
+        Παρατηρείται η ίδια μορφολογία σε όλα τα \texttt{.csv} του συνόλου δεδομένων, με κάποιες διαφοροποιήσεις που θα αναλυθούν στη συνέχεια.
 
         Παρόλο που στην περιγραφή αναφέρεται πως δεν υπάρχουν missing values, για να ελέγξουμε την ακεραιότητα του dataset, μέσω της συνάρτησης
-        \texttt{concat()} ενώνουμε όλα τα 22 αρχεία σε ένα ενιαίο dataframe. Τρέχοντας την \texttt{isnull().sum()}, έχουμε:
+        \texttt{concat()} ενώνουμε όλα τα 22 αρχεία σε ένα ενιαίο dataframe, \texttt{df\_combined}. Τρέχοντας την \texttt{isnull().sum()}, έχουμε:
 
         \begin{table}[h] \noindent\centering\tt
         \resizebox{0.23\textwidth}{!}{
@@ -74,8 +74,8 @@
         Όμως, έχουν εμφανιστεί \texttt{NaN} τιμές στις στήλες \texttt{"index"} και \texttt{"Unnamed: 0"}, οι οποίες στήλες μάλλον θα εμφανίζονται επιπλέον σε κάποια αρχεία.
 
         Ελέγχοντας όλα τα αρχεία, η στήλη \texttt{"index"} εμφανίζεται στα αρχεία \texttt{S015.csv} και \texttt{S021.csv} και η στήλη \texttt{"Unnamed: 0"} στο αρχείο \texttt{S023.csv}.
-        Έπειτα από έλεγχο, φαίνεται πως πρόκειται για δείκτες αύξουσας αρίθμησης που δεν προσφέρουν κάποια επιπλέον πληροφορία.
-        Επομένως, μπορούμε να τις αφαιρέσουμε χρησιμοποιώντας τη συνάρτηση \texttt{drop('όνομα', axis=1)}. Τα επεξεργασμένα αρχεία αποθηκεύονται με το επίθεμα \texttt{fix}.
+        Έπειτα από έλεγχο, φαίνεται πως πρόκειται για δείκτες αύξουσας αρίθμησης που δεν προσφέρουν κάποια χρήσιμη πληροφορία.
+        Επομένως, μπορούμε να τις αφαιρέσουμε χρησιμοποιώντας τη συνάρτηση \texttt{drop('όνομα', axis=1)}. Τα επεξεργασμένα \texttt{.csv} αρχεία αποθηκεύονται με το επίθεμα \texttt{fix}.
 
         Χρησιμοποιώντας τη συνάρτηση \texttt{describe()} μπορούμε να υπολογίσουμε βασικές στατιστικές μετρικές για τα δεδομένα μας.
         Η συνάρτηση επιστρέφει ένα dataframe με τις ακόλουθες στήλες:
@@ -92,7 +92,7 @@
             \item \texttt{\textbf{max}}: η μέγιστη τιμή για κάθε στήλη.
         \end{itemize}
 
-        Ενώνοντας συγκεντρωτικά τις μετρήσεις όλων των συμμετεχόντων στο \texttt{df\_combined} μέσω της \texttt{concat()},
+        Ενώνοντας συγκεντρωτικά τις μετρήσεις όλων των συμμετεχόντων στο \texttt{df\_combined},
         αυτά είναι τα \textbf{βασικά συγκεντρωτικά στατιστικά μεγέθη} όπως προκύπτουν από το \texttt{describe()}
         για όλες τις μετρήσεις από τους συμμετέχοντες, έχοντας αφαιρέσει την ετικέτα \texttt{label} μιας και αποτελείται από κατηγορικές τιμές:
 
@@ -126,42 +126,43 @@
         \end{center}
 
         Πέρα από τις προηγούμενες παρατηρήσεις που επιβεβαιώνονται, επιπλέον παρατηρούμε μια συμμετρικότητα κοντά στο μηδέν
-        για κάθε διάσταση. Επίσης, χρησιμοποιώντας την \texttt{displot()}, μπορούμε να οπτικοποιήσουμε το πώς κατανέμονται οι τιμές.
+        για κάθε διάσταση. Επίσης, χρησιμοποιώντας την \texttt{displot()}, μπορούμε να οπτικοποιήσουμε την κατανομή των τιμών.
         Ενδεικτικά για τον \texttt{S009}:
 
         \begin{multicols}{2} \centering
-            \includegraphics[scale=0.5]{img/distributions/S009_back_distributions}
-            \includegraphics[scale=0.5]{img/distributions/S009_thigh_distributions}
+            \includegraphics[scale=0.5]{img/S009_back_distribution}
+            \includegraphics[scale=0.5]{img/S009_thigh_distribution}
         \end{multicols}
 
         Χρησιμοποιώντας την \texttt{plot()}, μπορούμε να δημιουργήσουμε subplots για τις στήλες \texttt{back}\(_{x,y,z}\)
         και \texttt{thigh}\(_{x,y,z}\). Αυτά, για παράδειγμα, είναι τα subplots για τον συμμετέχοντα \texttt{S015}:
 
         \begin{multicols}{2} \centering
-            \noindent\includegraphics[scale=0.55]{img/distributions/S015_back_distributions}
-            \includegraphics[scale=0.55]{img/distributions/S015_thigh_distributions}
+            \noindent\includegraphics[scale=0.55]{img/waveforms/S015_back}
+            \includegraphics[scale=0.55]{img/waveforms/S015_thigh}
         \end{multicols}
 
         Φαίνεται ότι ο συμμετέχοντας κατά τη διάρκεια της μέτρησης μεταβάλλει τη φυσική του δραστηριότητα (μάλιστα με παρόμοιο τρόπο σε πλάτη και μηρό),
         καθώς υπάρχουν στιγμές που δεν υπάρχουν έντονες διακυμάνσεις των τιμών των μετρήσεων των αισθητήρων και άλλες όπου είναι πιο ενεργός,
         με την τιμή του \texttt{label} να αλλάζει και αυτή. Στις στιγμές που ο συμμετέχοντας δεν κινείται, το \texttt{label}
-        φαίνεται να παίρνει την τιμή \texttt{8 - Standing} που επιβεβαιώνει τη στασιμότητά του.
+        φαίνεται να παίρνει την τιμή \texttt{8 - Standing}, που επιβεβαιώνει τη στασιμότητά του.
 
         Από την άλλη, στον συμμετέχοντα \texttt{S029} παρατηρούμε πως η κίνηση της πλάτης δεν ταυτίζεται με την (έντονη) κίνηση των μηρών,
         κάτι που μας οδηγεί στο συμπέρασμα πως ο συμμετέχοντας κάνει ποδήλατο.
         Το γεγονός αυτό επιβεβαιώνεται και από τα spikes του \texttt{label} στις τιμές 100.
 
+        \pagebreak
         \begin{multicols}{2} \centering
-            \noindent\includegraphics[scale=0.55]{img/distributions/S029_back_distributions}
-            \includegraphics[scale=0.55]{img/distributions/S029_thigh_distributions}
+            \noindent\includegraphics[scale=0.55]{img/waveforms/S029_back}
+            \includegraphics[scale=0.55]{img/waveforms/S029_thigh}
         \end{multicols}
 
         Τέλος, για τον συμμετέχοντα \texttt{S027}, φαίνεται να έχει μια πολύ έντονη φυσική δραστηριότητα με τη \texttt{label}
         να παραμένει σταθερή με τιμή κοντά στο 2.5, κάτι από το οποίο μπορούμε να συμπεράνουμε πως ο συμμετέχοντας τρέχει:
 
         \begin{multicols}{2} \centering
-            \noindent\includegraphics[scale=0.55]{img/distributions/S027_back_distributions}
-            \includegraphics[scale=0.55]{img/distributions/S027_thigh_distributions}
+            \noindent\includegraphics[scale=0.55]{img/waveforms/S027_back}
+            \includegraphics[scale=0.55]{img/waveforms/S027_thigh}
         \end{multicols}
 
         Τέλος, για τον εντοπισμό συσχετίσεων, μπορούμε να δημιουργήσουμε ένα \texttt{heatmap()} μέσω της \texttt{seaborn}.
